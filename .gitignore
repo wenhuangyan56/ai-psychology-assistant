@@ -1,22 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Environment variables — NEVER commit API keys!
 .env
 .env.local
 .env.*.local
+*.env
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.venv/
-venv/
-env/
+# Distribution / packaging
 *.egg-info/
 dist/
 build/
+*.egg
 
-# Flask
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.pytest_cache/
+
+# Flask stuff:
 instance/
+.webassets-cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+conda-meta/
 
 # Node / Frontend
 node_modules/
@@ -36,7 +60,3 @@ Thumbs.db
 *.db
 *.db-shm
 *.db-wal
-
-# OS
-*.log
-*.tmp
